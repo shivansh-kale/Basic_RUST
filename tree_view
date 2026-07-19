@@ -1,0 +1,222 @@
+Rust for Solana Roadmap
+│
+├── Module 1 — Rust Basics
+│   │
+│   ├── Variables
+│   ├── mut
+│   ├── Constants
+│   ├── Primitive Data Types
+│   │   ├── Integers
+│   │   ├── Floating Point
+│   │   ├── Boolean
+│   │   └── Character
+│   ├── Strings
+│   │   ├── &str
+│   │   └── String
+│   ├── Formatting
+│   │   ├── println!
+│   │   ├── format!
+│   │   └── Debug Formatting
+│   ├── Functions
+│   │   ├── Parameters
+│   │   ├── Return Values
+│   │   └── Expressions
+│   └── Comments
+│
+├── Module 2 — Ownership, Borrowing & References
+│   │
+│   ├── Why Ownership Exists
+│   ├── Stack vs Heap
+│   ├── Ownership Rules
+│   ├── Move Semantics
+│   ├── Copy Types
+│   ├── Clone
+│   ├── Scope & Drop
+│   ├── Borrowing
+│   ├── Immutable References
+│   ├── Mutable References
+│   ├── Borrowing Rules
+│   ├── Dangling References
+│   ├── Ownership in Functions
+│   └── Solana Ownership Model
+│
+├── Module 3 — Structs & Methods
+│   │
+│   ├── Structs
+│   ├── Creating Objects
+│   ├── Field Access
+│   ├── Mutable Structs
+│   ├── Struct Update Syntax
+│   ├── Tuple Structs
+│   ├── Unit Structs
+│   ├── impl Blocks
+│   ├── Associated Functions
+│   ├── Methods
+│   │   ├── self
+│   │   ├── &self
+│   │   └── &mut self
+│   ├── Derive Traits
+│   └── Structs in Solana Accounts
+│
+├── Module 4 — Enums, Option & Result
+│   │
+│   ├── Enums
+│   ├── Enum Variants
+│   ├── Enums with Data
+│   ├── Pattern Matching
+│   ├── Option<T>
+│   ├── if let
+│   ├── Result<T,E>
+│   ├── Error Handling Basics
+│   ├── ? Operator
+│   └── Solana Instruction Enums
+│
+├── Module 5 — Collections
+│   │
+│   ├── Vec<T>
+│   ├── Heap Storage
+│   ├── push()
+│   ├── pop()
+│   ├── Indexing
+│   ├── get()
+│   ├── Iteration
+│   ├── Capacity vs Length
+│   ├── Slices
+│   ├── String Slices
+│   ├── HashMap<K,V>
+│   └── Collections in Solana
+│
+├── Module 6 — Traits 
+│   │
+│   ├── Trait Basics
+│   ├── Trait Implementations
+│   ├── Default Methods
+│   ├── Trait Bounds
+│   ├── impl Trait
+│   ├── where Clause
+│   ├── Associated Types
+│   ├── Static Dispatch
+│   ├── Dynamic Dispatch
+│   ├── Standard Traits
+│   └── Anchor Traits
+│
+├── Module 7 — Generics
+│   │
+│   ├── Generic Functions
+│   ├── Generic Structs
+│   ├── Generic Enums
+│   ├── Multiple Generics
+│   ├── Trait Bounds
+│   ├── where Clause
+│   ├── Monomorphization
+│   ├── Generic Methods
+│   └── Generics in Anchor
+│
+├── Module 8 — Error Handling
+│   │
+│   ├── Recoverable Errors
+│   ├── Unrecoverable Errors
+│   ├── panic!
+│   ├── Result<T,E>
+│   ├── Pattern Matching
+│   ├── unwrap()
+│   ├── expect()
+│   ├── ? Operator
+│   ├── Custom Errors
+│   ├── Result Combinators
+│   └── Solana Error Codes
+│
+├── Module 9 — Lifetimes
+│   │
+│   ├── Why Lifetimes Exist
+│   ├── Lifetime Annotations
+│   ├── Lifetime Elision
+│   ├── Struct Lifetimes
+│   ├── 'static
+│   ├── Borrow Checker
+│   ├── Lifetime Relationships
+│   └── 'info in Anchor
+│
+├── Module 10 — Cargo, Crates & Modules
+│   │
+│   ├── Cargo
+│   ├── Cargo Commands
+│   ├── Cargo.toml
+│   ├── Cargo.lock
+│   ├── Crates
+│   ├── Packages
+│   ├── Modules
+│   ├── pub
+│   ├── use
+│   ├── External Dependencies
+│   ├── Workspaces
+│   └── Anchor Project Structure
+│
+├── Module 11 — Closures & Iterators
+│   │
+│   ├── Closures
+│   ├── Variable Capture
+│   ├── move Closures
+│   ├── Iterators
+│   ├── iter()
+│   ├── iter_mut()
+│   ├── into_iter()
+│   ├── map()
+│   ├── filter()
+│   ├── collect()
+│   ├── Lazy Evaluation
+│   └── Iterator Pipelines
+│
+├── Module 12 — Smart Pointers
+│   │
+│   ├── Box<T>
+│   ├── Recursive Types
+│   ├── Rc<T>
+│   ├── Arc<T>
+│   ├── RefCell<T>
+│   ├── Rc<RefCell<T>>
+│   └── Smart Pointers in Rust Libraries
+│
+├── Module 13 — Macros
+│   │
+│   ├── Why Macros
+│   ├── Built-in Macros
+│   ├── println!
+│   ├── vec!
+│   ├── format!
+│   ├── macro_rules!
+│   ├── Declarative Macros
+│   ├── Derive Macros
+│   ├── Attribute Macros
+│   ├── Procedural Macros
+│   └── Anchor Macros
+│
+├── Module 14 — Rust for Solana 
+│   │
+│   ├── Solana Runtime
+│   ├── Accounts
+│   ├── Borsh Serialization
+│   ├── Deserialization
+│   ├── Program Derived Addresses (PDAs)
+│   ├── Context<'info, T>
+│   ├── Account<'info,T>
+│   ├── #[derive(Accounts)]
+│   ├── Instruction Flow
+│   ├── Cross Program Invocation (CPI)
+│   ├── Program Errors
+│   ├── Anchor Project Structure
+│   └── Rust → Solana Concept Mapping
+│
+└── Module 15 — Rust Mini Project
+    │
+    ├── Banking CLI
+    ├── Cargo Project Structure
+    ├── Modules
+    ├── Account Struct
+    ├── Methods
+    ├── HashMap Storage
+    ├── Error Handling
+    ├── CLI Menu
+    ├── Testing
+    ├── Code Organization
+    └── Final Rust Revision Before Solana
